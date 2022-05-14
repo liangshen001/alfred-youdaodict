@@ -1,4 +1,4 @@
-## @wangliang/alfred-youdaodict
+## @liangshen/alfred-youdaodict
 
 *Alfred工作流，使用有道词典去翻译文本*
 *An Alfred workflow uses YoudaoDict for translation*
