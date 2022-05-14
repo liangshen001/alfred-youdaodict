@@ -26,13 +26,13 @@ npm i -g @liangshen/alfred-youdaodict
 ![](./docs/youdaodict3.png)
 
 * 回车可以复制选中的翻译内容
-* 按command键 可以查看驼峰式命名法命名，回车复制命名
+* 按住command键 可以查看驼峰式命名法命名，再敲回车复制命名
   ![](./docs/youdaodict4.png)
-* 按option键 可以查看帕斯卡命名法/大驼峰式命名法命名，回车复制命名
+* 按住option键 可以查看帕斯卡命名法/大驼峰式命名法命名，再敲回车复制命名
   ![](./docs/youdaodict5.png)
-* 按ctrl键 可以查看下划线命名法命名，回车复制命名
+* 按住ctrl键 可以查看下划线命名法命名，再敲回车复制命名
   ![](./docs/youdaodict6.png)
-* 按fn键 可以查看中划线命名法命名，回车复制命名
+* 按住fn键 可以查看中划线命名法命名，再敲回车复制命名
   ![](./docs/youdaodict7.png)
-* 按shift键 可以查看全大写下划线命名法/常量命名，回车复制命名
+* 按住shift键 可以查看全大写下划线命名法/常量命名，再敲回车复制命名
   ![](./docs/youdaodict8.png)
