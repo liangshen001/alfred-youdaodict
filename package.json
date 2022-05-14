@@ -1,12 +1,14 @@
 {
-  "name": "@wangliang/alfred-youdaodict",
+  "name": "@wl/alfred-youdaodict",
   "version": "1.0.0",
   "description": "An Alfred workflow uses YoudaoDict for translation",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
+    "preuninstall": "alfy-cleanup",
+    "npm:scope:wangliang": "npm config set scope wl",
+    "publish:version:": "npm run npm:scope:wangliang && npm publish --access public ."
   },
   "keywords": [
     "alfred",
