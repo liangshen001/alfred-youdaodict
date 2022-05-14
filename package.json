@@ -1,0 +1,29 @@
+{
+  "name": "@wangliang/alfred-youdaodict",
+  "version": "1.0.0",
+  "description": "Use YoudaoDict to translate text",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "keywords": [
+    "alfred",
+    "workflow",
+    "youdao",
+    "youdaodict",
+    "alfy"
+  ],
+  "author": {
+    "name": "Wangliang",
+    "email": "850598163@qq.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "alfy": "^1.0.0",
+    "lodash.difference": "^4.5.0",
+    "lodash.sample": "^4.2.1",
+    "lodash.union": "^4.6.0"
+  }
+}
