@@ -1,7 +1,7 @@
 ## @wangliang/alfred-youdaodict
 
-*使用有道词典去翻译文本*
-*Use YoudaoDict to translate text*
+*Alfred工作流，使用有道词典去翻译文本*
+*An Alfred workflow uses YoudaoDict for translation*
 
 ### 运行环境
 
