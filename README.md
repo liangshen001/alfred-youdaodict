@@ -12,7 +12,7 @@
 ### 安装
 
 ```
-npm i -g @wangliang/alfred-youdaodict
+npm i -g @liangshen/alfred-youdaodict
 ```
 
 ### 使用方法

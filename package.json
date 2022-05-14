@@ -1,12 +1,14 @@
 {
-  "name": "@wangliang/alfred-youdaodict",
+  "name": "@liangshen/alfred-youdaodict",
   "version": "1.0.0",
   "description": "An Alfred workflow uses YoudaoDict for translation",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
+    "preuninstall": "alfy-cleanup",
+    "npm:scope:wangliang": "npm config set scope liangshen",
+    "publish:version:patch": "npm version patch && npm run npm:scope:wangliang && npm publish --access public ."
   },
   "keywords": [
     "alfred",
@@ -15,6 +17,14 @@
     "youdaodict",
     "alfy"
   ],
+  "bugs": {
+    "url": "https://github.com/liangshen001/alfred-youdaodict/issues"
+  },
+  "homepage": "https://github.com/liangshen001/alfred-youdaodict",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangshen001/alfred-youdaodict.git"
+  },
   "author": {
     "name": "Wangliang",
     "email": "850598163@qq.com"
