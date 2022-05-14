@@ -143,7 +143,7 @@ if (result.errorCode === 0) {
                 },
                 shift: {
                     arg: namedConst,
-                    subtitle: `全大写下划线命名法/常量 => ${hyphen}`,
+                    subtitle: `全大写下划线命名法/常量 => ${namedConst}`,
                 },
             },
         }
