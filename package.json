@@ -1,6 +1,6 @@
 {
   "name": "@liangshen/alfred-youdaodict",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An Alfred workflow uses YoudaoDict for translation",
   "type": "module",
   "main": "index.js",
