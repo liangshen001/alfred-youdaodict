@@ -7,6 +7,7 @@
   "scripts": {
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup",
+    "build": "tsc",
     "npm:scope:wangliang": "npm config set scope liangshen",
     "publish:version:patch": "npm version patch && npm run npm:scope:wangliang && npm publish --access public ."
   },
@@ -31,9 +32,9 @@
   },
   "license": "ISC",
   "dependencies": {
-    "alfy": "^1.0.0",
-    "lodash.difference": "^4.5.0",
-    "lodash.sample": "^4.2.1",
-    "lodash.union": "^4.6.0"
+    "alfy": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.2"
   }
 }

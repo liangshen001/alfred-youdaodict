@@ -1,8 +1,4 @@
-
 import alfy from "alfy";
-import sample from "lodash.sample"
-import union from "lodash.union"
-import difference from "lodash.difference"
 
 const FIXED_KEY = [
     {
@@ -66,8 +62,9 @@ const FIXED_KEY = [
         key: '2033774719'
     },
 ];
+var n = Math.floor(Math.random() * FIXED_KEY.length + 1) - 1;
 
-let selected = sample(FIXED_KEY);
+let selected = FIXED_KEY[n];
 const result = await alfy.fetch('http://fanyi.youdao.com/openapi.do', {
     searchParams: {
         keyfrom: selected.keyfrom,
@@ -77,7 +74,7 @@ const result = await alfy.fetch('http://fanyi.youdao.com/openapi.do', {
         version: '1.1',
         q: alfy.input
     }
-})
+}) as YoudaodictReslut;
 if (result.errorCode === 0) {
     // 过滤中文
     let reg = /^[a-zA-Z ]/; // .filter(i => reg.test(i))
@@ -97,12 +94,11 @@ if (result.errorCode === 0) {
         ...translationItems,
         ...webItems
     ].map(i => {
-        const strArr = difference(i.title.toLowerCase().split(' '),
-            union(['and', 'or', 'the', 'a', 'at', 'of'], [], ['ing', 'ed', 'ly'], ['was']));
+        const ignoreWords = ['and', 'or', 'the', 'a', 'at', 'of', 'ing', 'ed', 'ly','was' ];
+        const strArr = i.title.toLowerCase().split(' ')
+            .filter(i => !ignoreWords.some(j => i.includes(j)));
         // df
         const bigHumpArr = [...strArr]
-        // cl
-        const namedConstArr = [...strArr]
         const humpArr = [...strArr]
         for (let i = 0; i < strArr.length; i++) {
             if (i === 0) {
@@ -155,4 +151,10 @@ if (result.errorCode === 0) {
         subtitle: `无相关记录`,
         arg: 'error',
     }]);
+}
+
+type YoudaodictReslut = {
+    errorCode: number;
+    translation: string[];
+    web: {value: string[]}[];
 }
