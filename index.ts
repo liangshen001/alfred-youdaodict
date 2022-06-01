@@ -74,7 +74,7 @@ const result = await alfy.fetch('http://fanyi.youdao.com/openapi.do', {
         version: '1.1',
         q: alfy.input
     }
-}) as YoudaodictReslut;
+}) as YoudaoDictResult;
 if (result.errorCode === 0) {
     // 过滤中文
     let reg = /^[a-zA-Z ]/; // .filter(i => reg.test(i))
@@ -153,7 +153,7 @@ if (result.errorCode === 0) {
     }]);
 }
 
-type YoudaodictReslut = {
+type YoudaoDictResult = {
     errorCode: number;
     translation: string[];
     web: {value: string[]}[];
